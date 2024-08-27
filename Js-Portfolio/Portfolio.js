@@ -1,22 +1,22 @@
-if(navigator.onLine == true){
-    ScrollReveal({
-        distance:'80px',
-        duration:2000,
-        delay:200
-    });
-    ScrollReveal().reveal('.Imageise', {origin:'right'});
-    ScrollReveal().reveal('.murerr', {origin:'left'});
-    ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
-    ScrollReveal().reveal('.rada1', {origin:'left'});
-    ScrollReveal().reveal('.rada2', {origin:'right'});
-    ScrollReveal().reveal('.to_me3', {origin:'top'});
-    ScrollReveal().reveal('.to_me4', {origin:'bottom'});
-    ScrollReveal().reveal('.jejeje', {origin:'center'});
-    ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
-    ScrollReveal().reveal('.tapines', {origin:'bottom'});
-    ScrollReveal().reveal('.Forform', {origin:'right'});
-    ScrollReveal().reveal('.contactwrap', {origin:'left'});
-}
+// if(navigator.onLine == true){
+//     ScrollReveal({
+//         distance:'80px',
+//         duration:2000,
+//         delay:200
+//     });
+//     ScrollReveal().reveal('.Imageise', {origin:'right'});
+//     ScrollReveal().reveal('.murerr', {origin:'left'});
+//     ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
+//     ScrollReveal().reveal('.rada1', {origin:'left'});
+//     ScrollReveal().reveal('.rada2', {origin:'right'});
+//     ScrollReveal().reveal('.to_me3', {origin:'top'});
+//     ScrollReveal().reveal('.to_me4', {origin:'bottom'});
+//     ScrollReveal().reveal('.jejeje', {origin:'center'});
+//     ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
+//     ScrollReveal().reveal('.tapines', {origin:'bottom'});
+//     ScrollReveal().reveal('.Forform', {origin:'right'});
+//     ScrollReveal().reveal('.contactwrap', {origin:'left'});
+// }
 
 let rtnTxr = document.querySelector('.ueryyryry');
 let txtarry = ["I\'m a Web Developer An Graphic Designer", 'Am a full stack developer', 'I code with, HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP AND MYSQL'];
@@ -82,7 +82,7 @@ window.addEventListener('scroll', function(){
         this.file.style.height = this.size + 'px';
         this.file.style.animationDuration = this.animationDuration + 's';
 
-        document.body.appendChild(this.file);
+        document.querySelector('.pussycalt').appendChild(this.file);
 
         setTimeout(() =>{
             this.fadeOut();
@@ -105,9 +105,9 @@ window.addEventListener('scroll', function(){
         new Firework(x, y)
     }
 }
-setInterval(() => {
-    Firework.createRandomFirework();
-}, 500);
+// setInterval(() => {
+//     Firework.createRandomFirework();
+// }, 500);
 
 document.addEventListener('click', (event) =>{
     const x = event.clientX;
