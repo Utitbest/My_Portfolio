@@ -1,22 +1,22 @@
-// if(navigator.onLine == true){
-//     ScrollReveal({
-//         distance:'80px',
-//         duration:2000,
-//         delay:200
-//     });
-//     ScrollReveal().reveal('.Imageise', {origin:'right'});
-//     ScrollReveal().reveal('.murerr', {origin:'left'});
-//     ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
-//     ScrollReveal().reveal('.rada1', {origin:'left'});
-//     ScrollReveal().reveal('.rada2', {origin:'right'});
-//     ScrollReveal().reveal('.to_me3', {origin:'top'});
-//     ScrollReveal().reveal('.to_me4', {origin:'bottom'});
-//     ScrollReveal().reveal('.jejeje', {origin:'center'});
-//     ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
-//     ScrollReveal().reveal('.tapines', {origin:'bottom'});
-//     ScrollReveal().reveal('.Forform', {origin:'right'});
-//     ScrollReveal().reveal('.contactwrap', {origin:'left'});
-// }
+if(navigator.onLine == true){
+    ScrollReveal({
+        distance:'80px',
+        duration:2000,
+        delay:200
+    });
+    ScrollReveal().reveal('.Imageise', {origin:'right'});
+    ScrollReveal().reveal('.murerr', {origin:'left'});
+    ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
+    ScrollReveal().reveal('.rada1', {origin:'left'});
+    ScrollReveal().reveal('.rada2', {origin:'right'});
+    ScrollReveal().reveal('.to_me3', {origin:'top'});
+    ScrollReveal().reveal('.to_me4', {origin:'bottom'});
+    ScrollReveal().reveal('.jejeje', {origin:'center'});
+    ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
+    ScrollReveal().reveal('.tapines', {origin:'bottom'});
+    ScrollReveal().reveal('.Forform', {origin:'right'});
+    ScrollReveal().reveal('.contactwrap', {origin:'left'});
+}
 
 let rtnTxr = document.querySelector('.ueryyryry');
 let txtarry = ["I\'m a Web Developer An Graphic Designer", 'Am a full stack developer', 'I code with, HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP AND MYSQL'];
@@ -96,8 +96,13 @@ window.addEventListener('scroll', function(){
     }
 
     static randomPosition(){
-        const x = Math.floor(Math.random() * window.innerWidth)
-        const y = Math.floor(Math.random() * window.innerHeight)
+        let x = Math.floor(Math.random() * window.innerWidth);
+        const y = Math.floor(Math.random() * window.innerHeight);
+
+        if(x >= window.innerWidth - 80){
+            x = window.innerWidth / 2;
+        }
+
         return {x, y}
     }
     static createRandomFirework(){
@@ -105,9 +110,9 @@ window.addEventListener('scroll', function(){
         new Firework(x, y)
     }
 }
-// setInterval(() => {
-//     Firework.createRandomFirework();
-// }, 500);
+setInterval(() => {
+    Firework.createRandomFirework();
+}, 500);
 
 document.addEventListener('click', (event) =>{
     const x = event.clientX;
