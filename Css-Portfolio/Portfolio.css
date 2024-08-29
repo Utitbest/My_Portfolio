@@ -52,6 +52,8 @@
     max-width: 100%;
     display: block;
     height: auto;
+    background: #081b29;
+    overflow-x: hidden !important;
 }
 .progrm{
     height: 4px;
@@ -231,9 +233,6 @@
     content: '';
     background: blue;
     width:100%;
-}
-.h2w{
-    background: #081b29;
 }
 .xmlktd{
     width: 100%;
