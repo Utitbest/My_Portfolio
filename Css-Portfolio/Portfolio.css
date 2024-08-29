@@ -52,7 +52,6 @@
     max-width: 100%;
     display: block;
     height: auto;
-    overflow-x: hidden !important;
 }
 .progrm{
     height: 4px;
