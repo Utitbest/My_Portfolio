@@ -205,11 +205,9 @@
     color: rgb(228, 228, 235);
     margin: 10% 0 10% 0;
 }
-/* .ueryyryry{
-    height: 70%;
-    width: 100%;
-    display: flex;
-} */
+.ueryyryry{
+    transition: 1.5s linear;
+}
 .socials{
     height: 100px;
     width: 100% ;
@@ -310,7 +308,6 @@
     height: 100%;
     width: 40%;
     display: flex;
-    border-right: solid gray 2px;
 }
 .heia2{
     height: 100%;
@@ -973,6 +970,37 @@ html::-webkit-scrollbar-thumb{
         width: 90%;
         margin-top: 7%;
     }
+    .tapines{
+        align-items: center;
+        flex-direction: column;
+    }
+    .comeform2{
+        width: 90%;
+    }
+    .comeform1{
+        width: 90%;
+    }
+    .cocunutwater1 img{
+        object-fit: cover;
+        object-position: top;
+    }
+    .contactme{
+        align-items: center;
+        flex-direction: column;
+    }
+    .heia1.heia1{
+        width: 90%;
+    }
+    .atunty{
+        height: 120px;
+        width: 130px;
+    }
+    .heia2{
+        width: 90%;
+    }
+    .eieir{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 650px){
     .mininna{
@@ -998,10 +1026,10 @@ html::-webkit-scrollbar-thumb{
         align-items: center;
     }
     .comeform1{
-        width: 70%;
+        width: 95%;
     }
     .comeform2{
-        width: 70%;
+        width: 95%;
     }
     .contactme{
         flex-direction: column;
@@ -1011,7 +1039,7 @@ html::-webkit-scrollbar-thumb{
         width: 90%;
     }
     .heia2{
-        width: 90%;
+        width: 527px;
     }
 }
 @media only screen and (max-width: 650px){
