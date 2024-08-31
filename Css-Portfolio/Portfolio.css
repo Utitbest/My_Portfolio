@@ -514,7 +514,8 @@
 }
 .mininna p{
     font-family: karlaBold;
-    width: 100%;
+    width: 36%;
+    text-align: center;
     flex-wrap: wrap;
     color: wheat;
     justify-content: center;
@@ -844,7 +845,7 @@
 }
 .blacke{
     margin:1% 0 0 0;
-    color: wheat;
+    color: white;
 }
 .filomo{
     height: 400px;
@@ -892,6 +893,9 @@
     border-top: .2rem solid #081b29;
     display: flex;
     animation: date_ne 8s linear  infinite alternate-reverse;
+}
+.nsss{
+    font-size: 1em;
 }
 .jejeje::after{
     content: '';
@@ -941,6 +945,9 @@ html::-webkit-scrollbar-thumb{
     }
     .xkdjdjd{
         margin: 0;
+    }
+    .mininna p{
+        width: 57%;
     }
     .Imageise{
         border-top-right-radius:10px ;
@@ -1006,6 +1013,9 @@ html::-webkit-scrollbar-thumb{
     .mininna{
         height: auto;
     }
+    .mininna p{
+        width: 71%;
+    }
     .showboard{
         height: auto;
     }
@@ -1026,10 +1036,12 @@ html::-webkit-scrollbar-thumb{
         align-items: center;
     }
     .comeform1{
-        width: 95%;
+        width: 70%;
+        height: 48vh;
     }
     .comeform2{
-        width: 95%;
+        width: 70%;
+        height: 48vh;
     }
     .contactme{
         flex-direction: column;
@@ -1039,11 +1051,60 @@ html::-webkit-scrollbar-thumb{
         width: 90%;
     }
     .heia2{
-        width: 527px;
+        width: 95%;
     }
 }
-@media only screen and (max-width: 650px){
-    /* .showcase{
+@media only screen and (max-width: 500px){
+    .html1{
+        height: 120px;
+        width: 120px;
 
-    } */
+    }
+    .nsss{
+        font-size: .7em;
+        margin: 0;
+    }
+    .piswq{
+        font-size: 1em;
+    }
+    .Forform{
+        width: 90%;
+    }
+    .mininna p{
+        width: 86%;
+    }
+}
+@media only screen and (max-width:416px) {
+    .blacke{
+        font-size: .8em;
+        margin: 3% 0;
+    }
+    .gg{
+        width: 95%;
+    }
+    .mininna p{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:380px) {
+    .projectShow{
+        align-items: center;
+    }
+    .nextCh1{
+        width: 85%;
+        text-align: center;
+    }
+    .html1{
+        width: 100px;
+        height: 100px;
+    }
+    .nsss{
+        font-size: 11px !important;
+    }
+    .html2 h2{
+        font-size: 1.3em;
+    }
+    .html2 h3{
+        font-size: 1.2em;
+    }
 }
