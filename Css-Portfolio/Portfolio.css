@@ -517,7 +517,7 @@
     width: 36%;
     text-align: center;
     flex-wrap: wrap;
-    color: wheat;
+    color: white;
     justify-content: center;
     display: flex;
     margin: 0;
@@ -696,7 +696,7 @@
     font-family:karlaBold9;
     font-size: 1.3em;
     font-weight: 600;
-    color: wheat;
+    color: white;
     text-decoration: none;
 }
 .piswq:hover{
@@ -826,7 +826,7 @@
     font-weight: 600;
 }
 .wesas{
-    color: wheat;
+    color: white;
 }
 .supe{
     width: 100%;
@@ -916,7 +916,7 @@
     }
 }
 .me_love{
-    color: wheat;
+    color: white;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -1073,6 +1073,9 @@ html::-webkit-scrollbar-thumb{
     .mininna p{
         width: 86%;
     }
+    .murerr1 h1{
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width:416px) {
     .blacke{
@@ -1084,6 +1087,24 @@ html::-webkit-scrollbar-thumb{
     }
     .mininna p{
         text-align: center;
+    }
+    .Imageise{
+        height: 400px;
+    }
+    .jejeje{
+        height: 240px;
+        width: 240px;
+    }
+    .jejeje::before{
+        height: 280px;
+        width: 280px;
+    }
+    .jejeje::after{
+        width: 265px;
+        height: 265px;
+    }
+    .murerr1 h1{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width:380px) {
@@ -1106,5 +1127,21 @@ html::-webkit-scrollbar-thumb{
     }
     .html2 h3{
         font-size: 1.2em;
+    }
+    .Imageise{
+        height: 350px;
+    }
+    .urrsseddtc{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .piswq{
+        font-size: .8em;
+    }
+    .formforMyname1{
+        width: 72px;
+        height: 80%;
     }
 }

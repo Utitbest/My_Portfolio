@@ -19,7 +19,7 @@
 // }
 
 let rtnTxr = document.querySelector('.ueryyryry');
-let txtarry = ["I\'m a Web Developer An Graphic Designer", 'Am a full stack developer', 'I code with, HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP AND MYSQL'];
+let txtarry = ["I\'m a Web Developer An Graphic Designer         ", 'Am a full stack developer      ', 'I code with, HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP AND MYSQL        '];
 let starIndex = 0;
 let writeArray = 0;
 
@@ -97,13 +97,10 @@ window.addEventListener('scroll', function(){
 
     static randomPosition(){
         let x = Math.floor(Math.random() * window.innerWidth);
-        let y = Math.floor(Math.random() * window.innerHeight);
+        const y = Math.floor(Math.random() * window.innerHeight);
 
         if(x >= window.innerWidth - 100){
             x = window.innerWidth / 2;
-        }
-        if(y >= window.innerHeight - 100){
-            y = window.innerHeight / 2;
         }
 
         return {x, y}
