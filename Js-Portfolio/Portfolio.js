@@ -19,7 +19,7 @@
 // }
 
 let rtnTxr = document.querySelector('.ueryyryry');
-let txtarry = ["I\'m a Web Developer An Graphic Designer         ", 'Am a full stack developer      ', 'I code with, HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, PHP AND MYSQL        '];
+let txtarry = ["I\'m a Web Developer An Graphic Designer     ", 'Am a full stack developer    ', 'I code with, HTML, CSS, JAVASCRIPT,   ','PHP, BOOTSTRAP AND MYSQL.   '];
 let starIndex = 0;
 let writeArray = 0;
 

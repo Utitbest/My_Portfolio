@@ -130,8 +130,9 @@
     align-items: center;
     padding: 8px;
     font-size: 15px;
+    border: none;
     background: none;
-    border: solid 2px rgba(5, 143, 14, 0.389);
+    border-bottom: solid 2px skyblue;
     outline: none;
     border-radius: 5px;
     color: wheat;
@@ -149,7 +150,7 @@
     border-radius: 5px;
     border: none;
     font-weight: 600;
-    border: solid 2px rgb(227, 240, 35);
+    border-bottom: solid 2px skyblue;
     /* background:rgb(226, 242, 3); */
 }
 .git1:hover{
@@ -170,8 +171,8 @@
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px;
     flex-direction: column;
 }
 .murerr1{
@@ -266,7 +267,7 @@
     font-size: 1.2em;
 }
 .Imageise{
-    height: 477px;
+    height: 90%;
     width: 80%;
     display: flex;
     /* border: solid silver 2px; */
@@ -932,11 +933,14 @@ html::-webkit-scrollbar-thumb{
     background: #10506c;
     border-radius: 50px;
 }
-@media only screen and (max-width: 825px){
+@media only screen and (max-width: 900px) {
     .Imageise{
-        height:448px;
-        width: 70%;
+        height: 78%;
+        width: 93%;
     }
+}
+@media only screen and (max-width: 825px){
+    
 }
 @media only screen and (max-width: 800px){
     .murerr1{
@@ -1008,6 +1012,11 @@ html::-webkit-scrollbar-thumb{
     .eieir{
         width: 90%;
     }
+    .murerr1 h1{
+        font-size: 34px;
+        margin: 0;
+        height: 90px;
+    }
 }
 @media only screen and (max-width: 650px){
     .mininna{
@@ -1054,6 +1063,11 @@ html::-webkit-scrollbar-thumb{
         width: 95%;
     }
 }
+@media only screen and (max-width:550px) {
+    .murerr1{
+        width: 95%;
+    }
+}
 @media only screen and (max-width: 500px){
     .html1{
         height: 120px;
@@ -1077,6 +1091,13 @@ html::-webkit-scrollbar-thumb{
         font-size: 30px;
     }
 }
+@media only screen and (max-width:475px) {
+    .murerr1 h1{
+        height: 80px;
+        font-size: 26px;
+
+    }
+}
 @media only screen and (max-width:416px) {
     .blacke{
         font-size: .8em;
@@ -1087,9 +1108,6 @@ html::-webkit-scrollbar-thumb{
     }
     .mininna p{
         text-align: center;
-    }
-    .Imageise{
-        height: 400px;
     }
     .jejeje{
         height: 240px;
@@ -1128,9 +1146,6 @@ html::-webkit-scrollbar-thumb{
     .html2 h3{
         font-size: 1.2em;
     }
-    .Imageise{
-        height: 350px;
-    }
     .urrsseddtc{
         height: 60vh;
     }
@@ -1143,5 +1158,34 @@ html::-webkit-scrollbar-thumb{
     .formforMyname1{
         width: 72px;
         height: 80%;
+    }
+}
+@media only screen and (max-height:370px) {
+    .urrsseddtc{
+        height: 400px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .ueiei{
+        font-size: 22px;
+    }
+    .murerr1 h1{
+        font-size: 20px;
+    }
+    .coffess{
+        font-size: .9rem;
+    }
+    .html1{
+        width: 80px;
+        height: 80px;
+    }
+    .html2 h3{
+        font-size: .9em;
+    }
+    .html2 h2{
+        font-size: 1em;
+    }
+    .nsss{
+        font-size: 9px !important;
     }
 }
