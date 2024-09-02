@@ -2,7 +2,7 @@ if(navigator.onLine == true){
     ScrollReveal({
         distance:'80px',
         duration:2000,
-        delay:200
+        delay:100
     });
     ScrollReveal().reveal('.Imageise', {origin:'right'});
     ScrollReveal().reveal('.murerr', {origin:'left'});
