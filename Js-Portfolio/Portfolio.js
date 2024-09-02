@@ -70,8 +70,8 @@ window.addEventListener('scroll', function(){
     constructor(x, y){
         this.x = x + window.scrollX;
         this.y = y + window.scrollY;
-        this.size = Math.floor(Math.random() * 20) + 5;
-        this.animationDuration = Math.random() * 2 + 20;
+        this.size = Math.floor(Math.random() * 10) + 5;
+        this.animationDuration = Math.random() * 10 + 20;
         this.fadeOutDelay = Math.random() * 2 + 20;
 
         this.file = document.createElement('div')
@@ -97,12 +97,14 @@ window.addEventListener('scroll', function(){
 
     static randomPosition(){
         let x = Math.floor(Math.random() * window.innerWidth);
-        const y = Math.floor(Math.random() * window.innerHeight);
+        let y = Math.floor(Math.random() * window.innerHeight);
 
         if(x >= window.innerWidth - 100){
             x = window.innerWidth / 2;
         }
-
+        if(y >= window.innerWidth - 100){
+            y = window.innerWidth / 2;
+        }
         return {x, y}
     }
     static createRandomFirework(){
@@ -115,8 +117,14 @@ setInterval(() => {
 }, 500);
 
 document.addEventListener('click', (event) =>{
-    const x = event.clientX;
-    const y = event.clientY;
+    let x = event.clientX;
+    let y = event.clientY;
+    if(x >= window.innerWidth - 150){
+        x = window.innerWidth / 2;
+    }
+    if(y >= window.innerWidth - 130){
+        y = window.innerWidth / 2;
+    }
     new Firework(x, y);
 });
 let blacke = document.querySelector('.blacke')
