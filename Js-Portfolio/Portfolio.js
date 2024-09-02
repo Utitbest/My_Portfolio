@@ -37,7 +37,7 @@ setInterval(function(){
     }
         if(writeArray >= txtarry.length){
             writeArray = 0; 
-        } // Make the typing stop for 5ms after typing for slow readers
+        }
     rtnTxr.innerHTML += txtarry[writeArray].charAt(starIndex);
     rtnTxr.setAttribute('typing', true)
     starIndex++;    
