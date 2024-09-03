@@ -1,22 +1,22 @@
-if(navigator.onLine == true){
-    ScrollReveal({
-        distance:'80px',
-        duration:2000,
-        delay:100
-    });
-    ScrollReveal().reveal('.Imageise', {origin:'right'});
-    ScrollReveal().reveal('.murerr', {origin:'left'});
-    ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
-    ScrollReveal().reveal('.rada1', {origin:'left'});
-    ScrollReveal().reveal('.rada2', {origin:'right'});
-    ScrollReveal().reveal('.to_me3', {origin:'top'});
-    ScrollReveal().reveal('.to_me4', {origin:'bottom'});
-    ScrollReveal().reveal('.jejeje', {origin:'center'});
-    ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
-    ScrollReveal().reveal('.tapines', {origin:'bottom'});
-    ScrollReveal().reveal('.Forform', {origin:'right'});
-    ScrollReveal().reveal('.contactwrap', {origin:'left'});
-}
+    if(navigator.onLine == true){
+        ScrollReveal({
+            distance:'80px',
+            duration:2000,
+            delay:100
+        });
+        ScrollReveal().reveal('.Imageise', {origin:'right'});
+        ScrollReveal().reveal('.murerr', {origin:'left'});
+        ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
+        ScrollReveal().reveal('.rada1', {origin:'left'});
+        ScrollReveal().reveal('.rada2', {origin:'right'});
+        ScrollReveal().reveal('.to_me3', {origin:'top'});
+        ScrollReveal().reveal('.to_me4', {origin:'bottom'});
+        ScrollReveal().reveal('.jejeje', {origin:'center'});
+        ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
+        ScrollReveal().reveal('.tapines', {origin:'bottom'});
+        ScrollReveal().reveal('.Forform', {origin:'right'});
+        ScrollReveal().reveal('.contactwrap', {origin:'left'});
+    }
 
 let rtnTxr = document.querySelector('.ueryyryry');
 let txtarry = ["I\'m a Web Developer An Graphic Designer     ", 'Am a full stack developer    ', 'I code with, HTML, CSS, JAVASCRIPT,   ','PHP, BOOTSTRAP AND MYSQL.   '];
@@ -133,14 +133,38 @@ let mens = men.getFullYear();
     blacke.innerHTML = 'Utitbest Akpan - All right Reserved &copy; 2022 - ' + mens;  
 
 
-  
+window.addEventListener('online', FreashIn)
+window.addEventListener('offline', FreashOff)
 
-// var progrm = document.querySelector('.progrm');
-// let boding = document.body;
-// document.body.onscroll = function(){
-//     var winscrool = this.scrollTop || this.scrollTop;
-//     var hga = this.scrollHeight - this.clientHeight;
-//     var csea = (winscrool / hga) * 100;
-//     document.querySelector('.progrm').style.width = csea + '%';
-//     // alert(csea)
-// }
+function FreashIn(){
+    let pussycalt1 = document.querySelector('.pussycalt1');
+    let totori = document.createElement('div')
+        totori.className = 'heartAttack';
+        let pink = document.createElement('div')
+            pink.className = 'lane';
+            pink.innerHTML = 'You\'re Back Online';
+            totori.append(pink)
+
+
+        pussycalt1.append(totori)
+
+        setTimeout(() =>{
+            totori.remove()
+        }, 6000)
+}
+function FreashOff(){
+    let pussycalt1 = document.querySelector('.pussycalt1');
+    let totori = document.createElement('div')
+        totori.className = 'heartAttack';
+        let pink = document.createElement('div')
+            pink.className = 'lane';
+            pink.innerHTML = 'You\'re Internet is down';
+            totori.append(pink)
+
+
+        pussycalt1.append(totori)
+
+        setTimeout(() =>{
+            totori.remove()
+        }, 6000)
+}
