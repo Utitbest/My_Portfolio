@@ -154,7 +154,7 @@ function FreashIn(){
 }
 function FreashOff(){
     let pussycalt1 = document.querySelector('.pussycalt1');
-    let totori = document.createElement('div')
+    let totori = document.createElement('div');
         totori.className = 'heartAttack';
         let pink = document.createElement('div')
             pink.className = 'lane';
