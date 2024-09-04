@@ -168,3 +168,18 @@ function FreashOff(){
             totori.remove()
         }, 6000)
 }
+
+function HoverEffect(){
+    let html1 = document.querySelectorAll('.html1')
+        html1.forEach(afai =>{
+            afai.addEventListener('mouseover', function(){
+                let textreturn = document.querySelectorAll('.ddw')
+                let conscienNeibour = 0;
+                textreturn.forEach(venom =>{
+                    let Risky = Number(venom.innerHTML) = conscienNeibour -1;
+                })
+                conscienNeibour--;
+            })
+    })
+}
+HoverEffect()
