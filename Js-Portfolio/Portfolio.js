@@ -1,22 +1,22 @@
-    if(navigator.onLine == true){
-        ScrollReveal({
-            distance:'80px',
-            duration:2000,
-            delay:100
-        });
-        ScrollReveal().reveal('.Imageise', {origin:'right'});
-        ScrollReveal().reveal('.murerr', {origin:'left'});
-        ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
-        ScrollReveal().reveal('.rada1', {origin:'left'});
-        ScrollReveal().reveal('.rada2', {origin:'right'});
-        ScrollReveal().reveal('.to_me3', {origin:'top'});
-        ScrollReveal().reveal('.to_me4', {origin:'bottom'});
-        ScrollReveal().reveal('.jejeje', {origin:'center'});
-        ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
-        ScrollReveal().reveal('.tapines', {origin:'bottom'});
-        ScrollReveal().reveal('.Forform', {origin:'right'});
-        ScrollReveal().reveal('.contactwrap', {origin:'left'});
-    }
+    // if(navigator.onLine == true){
+    //     ScrollReveal({
+    //         distance:'80px',
+    //         duration:2000,
+    //         delay:100
+    //     });
+    //     ScrollReveal().reveal('.Imageise', {origin:'right'});
+    //     ScrollReveal().reveal('.murerr', {origin:'left'});
+    //     ScrollReveal().reveal('.thesmae', {origin:'bottom'});    
+    //     ScrollReveal().reveal('.rada1', {origin:'left'});
+    //     ScrollReveal().reveal('.rada2', {origin:'right'});
+    //     ScrollReveal().reveal('.to_me3', {origin:'top'});
+    //     ScrollReveal().reveal('.to_me4', {origin:'bottom'});
+    //     ScrollReveal().reveal('.jejeje', {origin:'center'});
+    //     ScrollReveal().reveal('.me_love', {origin:'bottom'}); 
+    //     ScrollReveal().reveal('.tapines', {origin:'bottom'});
+    //     ScrollReveal().reveal('.Forform', {origin:'right'});
+    //     ScrollReveal().reveal('.contactwrap', {origin:'left'});
+    // }
 
 let rtnTxr = document.querySelector('.ueryyryry');
 let txtarry = ["I\'m a Web Developer An Graphic Designer     ", 'Am a full stack developer    ', 'I code with, HTML, CSS, JAVASCRIPT,   ','PHP, BOOTSTRAP AND MYSQL.   '];
@@ -171,14 +171,25 @@ function FreashOff(){
 
 function HoverEffect(){
     let html1 = document.querySelectorAll('.html1')
-        html1.forEach(afai =>{
+        html1.forEach((afai, akd) =>{
             afai.addEventListener('mouseover', function(){
-                let textreturn = document.querySelectorAll('.ddw')
-                let conscienNeibour = 0;
-                textreturn.forEach(venom =>{
-                    let Risky = Number(venom.innerHTML) = conscienNeibour -1;
-                })
-                conscienNeibour--;
+                let textreturn = document.querySelectorAll('.ddw');
+                let drop = 0;
+                    let conscienNeibour = textreturn[akd].innerHTML;
+                    let Abigial = Number(conscienNeibour)
+                    // alert(typeof Abigial)
+                let sechelicoptar = setInterval(()=>{
+                    if(--Abigial != 0){
+                         textreturn[akd].innerHTML = Abigial -1
+                    }
+                        let abina = textreturn[akd].getAttribute('data')
+                        let victor = Number(abina)
+                    if(Abigial == 0){
+                            textreturn[akd].innerHTML = victor;
+                            clearInterval(sechelicoptar)
+                    }
+                }, 100)
+                
             })
     })
 }

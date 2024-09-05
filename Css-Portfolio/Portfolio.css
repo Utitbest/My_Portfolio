@@ -611,9 +611,10 @@
 }
 .html2 h3{
     color: skyblue;
+    margin: 0;
 }
-.html2 h2{
-    justify-content: center;
+.lovei{
+    /* justify-content: center; */
     align-items: center;
     display: flex;
     color: wheat;
@@ -1190,7 +1191,7 @@ html::-webkit-scrollbar-thumb{
     .nsss{
         font-size: 11px !important;
     }
-    .html2 h2{
+    .lovei h2{
         font-size: 1.3em;
     }
     .html2 h3{
@@ -1232,7 +1233,7 @@ html::-webkit-scrollbar-thumb{
     .html2 h3{
         font-size: .9em;
     }
-    .html2 h2{
+    .lovei h2{
         font-size: 1em;
     }
     .nsss{
