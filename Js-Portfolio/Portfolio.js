@@ -166,31 +166,22 @@ function FreashOff(){
 
         setTimeout(() =>{
             totori.remove()
-        }, 6000)
+        }, 9000)
 }
-
-function HoverEffect(){
-    let html1 = document.querySelectorAll('.html1')
-        html1.forEach((afai, akd) =>{
-            afai.addEventListener('mouseover', function(){
-                let textreturn = document.querySelectorAll('.ddw');
-                let drop = 0;
-                    let conscienNeibour = textreturn[akd].innerHTML;
-                    let Abigial = Number(conscienNeibour)
-                    // alert(typeof Abigial)
-                let sechelicoptar = setInterval(()=>{
-                    if(--Abigial != 0){
-                         textreturn[akd].innerHTML = Abigial -1
-                    }
-                        let abina = textreturn[akd].getAttribute('data')
-                        let victor = Number(abina)
-                    if(Abigial == 0){
-                            textreturn[akd].innerHTML = victor;
-                            clearInterval(sechelicoptar)
-                    }
-                }, 100)
-                
-            })
-    })
-}
-HoverEffect()
+let Decrease;
+let Increase;
+let html1 = document.querySelectorAll('.html1')
+    html1.forEach((raw, onraw)=>{
+        raw.addEventListener('mouseenter', function(){
+            let Numcounting = document.querySelectorAll('.ddw')
+            let Arrdee = Number(Numcounting[onraw].innerHTML);
+            Decrease = setInterval(()=>{
+                if(--Arrdee != 0){
+                    Numcounting[onraw].innerHTML = Arrdee;
+                };
+                if(Arrdee <= 0){
+                    clearInterval(Decrease)
+                };
+            }, 10);
+        });
+    });
