@@ -160,10 +160,7 @@ function FreashOff(){
             pink.className = 'lane';
             pink.innerHTML = 'You\'re Internet is down';
             totori.append(pink)
-
-
         pussycalt1.append(totori)
-
         setTimeout(() =>{
             totori.remove()
         }, 9000)
@@ -173,6 +170,8 @@ let Increase;
 let html1 = document.querySelectorAll('.html1')
     html1.forEach((raw, onraw)=>{
         raw.addEventListener('mouseenter', function(){
+            clearInterval(Increase)
+            this.classList.add('Alanwalker')
             let Numcounting = document.querySelectorAll('.ddw')
             let Arrdee = Number(Numcounting[onraw].innerHTML);
             Decrease = setInterval(()=>{
@@ -182,6 +181,20 @@ let html1 = document.querySelectorAll('.html1')
                 if(Arrdee <= 0){
                     clearInterval(Decrease)
                 };
-            }, 10);
+            }, 50);
         });
+        let Numcounting = document.querySelectorAll('.ddw')
+        let bady = Numcounting[onraw].getAttribute('data');
+        let connectee = Number(bady)
+        raw.addEventListener('mouseleave', function(){
+            clearInterval(Decrease)
+            this.classList.remove('Alanwalker')
+            let stamp = 0;
+            Increase = setInterval(()=>{
+                if(stamp <= connectee){
+                    Numcounting[onraw].innerHTML = stamp;
+                }
+                stamp++;
+            }, 50)
+        })
     });
